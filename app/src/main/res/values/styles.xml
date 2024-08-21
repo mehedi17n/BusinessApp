@@ -1,0 +1,7 @@
+<resources>
+    <style name="CustomDatePickerDialog" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarHeaderConfirmButton">@color/primary</item>
+        <item name="materialCalendarFullscreenTheme">@color/primary</item>
+        <item name="colorAccent">@color/primary</item>
+    </style>
+</resources>

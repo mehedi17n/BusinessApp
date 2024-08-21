@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">BusinessApp</string>
+    <string name="profile">Profile</string>
+    <string name="setup">Setup</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="name">Name</string>
+    <string name="star">*</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="num_hint">+88018XXXXXXXX</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="example_gmail_com">Example@gmail.com</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="previous">Previous</string>
+    <string name="business">Business</string>
+    <string name="infomation">Infomation</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="enter_your_shop_name">Enter your shop name</string>
+    <string name="shop_address">Shop Address</string>
+    <string name="address_hint">Road: 01, Block: A, Sector: 6</string>
+    <string name="rm_ref_no">RM Ref. No</string>
+    <string name="rm_ref_hint">RMXXXXXXXXX</string>
+    <string name="city">city</string>
+    <string name="area">Area</string>
+    <string name="select_city">Select City</string>
+    <string name="select_area">Select Area</string>
+
+    <string-array name="cities_array">
+        <item>Dhaka</item>
+        <item>Chittagong</item>
+        <item>Khulna</item>
+        <item>Rajshahi</item>
+        <item>Sylhet</item>
+    </string-array>
+
+    <string-array name="areas_array">
+        <item>Gulshan</item>
+        <item>Dhanmondi</item>
+        <item>Banani</item>
+        <item>Mirpur</item>
+        <item>Uttara</item>
+    </string-array>
+</resources>
