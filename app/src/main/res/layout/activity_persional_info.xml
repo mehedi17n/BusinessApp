@@ -96,6 +96,7 @@
             android:hint="@string/enter_your_name"
             android:background="@drawable/edittext_border"
             android:fontFamily="@font/poppins_regular"
+            android:maxLength="20"
             android:textSize="15sp"
             android:padding="10dp"
             />
@@ -131,7 +132,8 @@
             android:fontFamily="@font/poppins_regular"
             android:textSize="15sp"
             android:padding="10dp"
-            />
+            android:maxLength="11"
+            android:inputType="number" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -162,6 +164,7 @@
             android:hint="@string/example_gmail_com"
             android:background="@drawable/edittext_border"
             android:fontFamily="@font/poppins_regular"
+            android:maxLength="20"
             android:textSize="15sp"
             android:padding="10dp"
             />

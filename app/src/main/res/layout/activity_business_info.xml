@@ -83,6 +83,7 @@
             android:hint="@string/enter_your_shop_name"
             android:background="@drawable/edittext_border"
             android:fontFamily="@font/poppins_regular"
+            android:maxLength="20"
             android:textSize="15sp"
             android:padding="10dp"/>
 
@@ -115,6 +116,7 @@
             android:hint="@string/address_hint"
             android:background="@drawable/edittext_border"
             android:fontFamily="@font/poppins_regular"
+            android:maxLength="20"
             android:textSize="15sp"
             android:padding="10dp"/>
 
@@ -147,8 +149,10 @@
             android:hint="@string/rm_ref_hint"
             android:background="@drawable/edittext_border"
             android:fontFamily="@font/poppins_regular"
+            android:maxLength="10"
             android:textSize="15sp"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:inputType="textCapCharacters" />
 
         <RelativeLayout
             android:layout_width="wrap_content"

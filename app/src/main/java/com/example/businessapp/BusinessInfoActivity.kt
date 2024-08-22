@@ -45,8 +45,7 @@ class BusinessInfoActivity : AppCompatActivity() {
         }
 
         cancelButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            onBackPressedDispatcher.onBackPressed()
         }
     }
 }
