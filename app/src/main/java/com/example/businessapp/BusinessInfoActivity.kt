@@ -1,19 +1,26 @@
 package com.example.businessapp
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.persistableBundleOf
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class BusinessInfoActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_business_info)
+
 
         val citySpinner: Spinner = findViewById(R.id.cityDropdown)
         val areaSpinner: Spinner = findViewById(R.id.areaDropdown)
@@ -32,15 +39,14 @@ class BusinessInfoActivity : AppCompatActivity() {
         areaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         areaSpinner.adapter = areaAdapter
 
-        // Handle Submit button click
         submitButton.setOnClickListener {
-            val selectedCity = citySpinner.selectedItem.toString()
-            val selectedArea = areaSpinner.selectedItem.toString()
+            val intent = Intent(this, ShopTypeActivity::class.java)
+            startActivity(intent)
         }
 
-        // Handle Cancel button click
         cancelButton.setOnClickListener {
-            finish()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
